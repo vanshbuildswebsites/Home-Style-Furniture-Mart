@@ -4,30 +4,23 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Home Style Furniture Mart | Khatima</title>
-
-<meta name="description"
-content="Home Style Furniture Mart — Furniture, mattresses and home essentials in Khatima.">
+<title>Home Style Furniture Mart — Khatima</title>
+<meta name="description" content="Home Style Furniture Mart — Furniture for living, dining and bedroom spaces in Khatima.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 
 <style>
-
 :root{
-  --bg:#f3eee6;
-  --paper:#fffdf9;
-  --dark:#171411;
-  --dark2:#211c17;
-  --brown:#79583d;
-  --brown2:#9a7653;
-  --gold:#c9a16d;
-  --muted:#746b62;
-  --line:rgba(23,20,17,.12);
+  --bg:#f5f1ea;
+  --paper:#fbf9f5;
+  --dark:#171714;
+  --brown:#8b684d;
+  --brown2:#b18a68;
+  --muted:#746f68;
+  --line:#ddd5ca;
   --white:#fff;
-  --shadow:0 25px 70px rgba(40,27,16,.14);
 }
 
 *{
@@ -41,103 +34,67 @@ html{
 }
 
 body{
-  font-family:"DM Sans",sans-serif;
   background:var(--bg);
   color:var(--dark);
+  font-family:"DM Sans",sans-serif;
   overflow-x:hidden;
 }
 
 img{
   width:100%;
-  height:100%;
-  object-fit:cover;
   display:block;
 }
 
 a{
-  text-decoration:none;
   color:inherit;
+  text-decoration:none;
 }
 
-/* =========================
-   DEMO BAR
-========================= */
+/* DEMO NOTICE */
 
 .demo-bar{
-  background:#11100e;
-  color:#eee6da;
+  background:#171714;
+  color:#fff;
   text-align:center;
-  padding:9px 15px;
+  padding:10px 15px;
   font-size:10px;
-  font-weight:800;
-  letter-spacing:1.5px;
+  letter-spacing:2.5px;
+  font-weight:700;
 }
 
-.demo-bar span{
-  color:#d6ad78;
-}
+/* NAV */
 
-/* =========================
-   NAV
-========================= */
-
-header{
+nav{
+  height:78px;
+  padding:0 6%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
   position:sticky;
   top:0;
-  z-index:1000;
-  background:rgba(255,253,249,.9);
-  backdrop-filter:blur(18px);
+  z-index:999;
+  background:rgba(245,241,234,.94);
+  backdrop-filter:blur(15px);
   border-bottom:1px solid var(--line);
 }
 
-.nav{
-  max-width:1250px;
-  margin:auto;
-  padding:17px 25px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:25px;
-}
-
 .logo{
-  display:flex;
-  align-items:center;
-  gap:11px;
-}
-
-.logo-box{
-  width:43px;
-  height:43px;
-  border-radius:13px;
-  background:var(--dark);
-  color:white;
-  display:grid;
-  place-items:center;
   font-family:"Playfair Display",serif;
-  font-size:21px;
+  font-size:25px;
+  font-weight:700;
+  letter-spacing:-.7px;
 }
 
-.logo-text strong{
-  display:block;
-  font-size:14px;
-}
-
-.logo-text small{
-  display:block;
-  font-size:9px;
-  color:var(--muted);
-  letter-spacing:1.4px;
-  text-transform:uppercase;
-  margin-top:2px;
+.logo span{
+  color:var(--brown);
+  font-weight:500;
 }
 
 .nav-links{
   display:flex;
-  align-items:center;
-  gap:28px;
+  gap:30px;
   font-size:12px;
-  font-weight:700;
+  font-weight:600;
 }
 
 .nav-links a{
@@ -148,806 +105,525 @@ header{
   color:var(--brown);
 }
 
-.nav-cta{
+.nav-btn{
   background:var(--dark);
-  color:white;
-  padding:12px 18px;
+  color:#fff;
+  padding:12px 19px;
   border-radius:100px;
+  font-size:12px;
+  font-weight:700;
+  transition:.3s;
 }
 
-.nav-cta:hover{
-  color:white!important;
+.nav-btn:hover{
+  background:var(--brown);
   transform:translateY(-2px);
 }
 
-/* =========================
-   HERO
-========================= */
+/* HERO */
 
 .hero{
-  max-width:1250px;
-  margin:auto;
-  padding:60px 25px 90px;
+  min-height:calc(100vh - 110px);
   display:grid;
-  grid-template-columns:.9fr 1.1fr;
-  gap:65px;
-  align-items:center;
+  grid-template-columns:45% 55%;
 }
 
-.pill{
-  display:inline-flex;
-  align-items:center;
-  gap:8px;
-  padding:8px 12px;
-  border:1px solid rgba(121,88,61,.25);
-  border-radius:100px;
-  font-size:9px;
-  font-weight:800;
-  letter-spacing:1.5px;
+.hero-content{
+  padding:80px 9%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.eyebrow{
+  color:var(--brown);
+  font-size:10px;
+  letter-spacing:3px;
   text-transform:uppercase;
-  color:var(--brown);
+  font-weight:700;
+  margin-bottom:22px;
+  display:flex;
+  align-items:center;
+  gap:10px;
 }
 
-.dot{
-  width:6px;
-  height:6px;
-  background:var(--gold);
-  border-radius:50%;
+.eyebrow:before{
+  content:"";
+  width:32px;
+  height:1px;
+  background:var(--brown);
 }
 
-h1{
+.hero h1{
   font-family:"Playfair Display",serif;
-  font-weight:500;
-  font-size:clamp(52px,7vw,92px);
+  font-size:clamp(55px,7vw,100px);
   line-height:.9;
-  letter-spacing:-4px;
-  margin:23px 0;
+  letter-spacing:-5px;
+  font-weight:600;
 }
 
-h1 em{
+.hero h1 em{
   color:var(--brown);
+  font-weight:500;
 }
 
-.hero-text{
-  max-width:510px;
+.hero-description{
+  max-width:450px;
+  margin-top:30px;
   color:var(--muted);
+  font-size:15px;
   line-height:1.8;
-  font-size:14px;
 }
 
 .hero-actions{
   display:flex;
   gap:12px;
+  margin-top:32px;
   flex-wrap:wrap;
-  margin-top:30px;
 }
 
 .btn{
+  padding:15px 23px;
+  border-radius:100px;
+  font-size:12px;
+  font-weight:700;
+  transition:.3s;
   display:inline-flex;
   justify-content:center;
   align-items:center;
-  gap:8px;
-  padding:15px 21px;
-  border-radius:100px;
-  font-size:11px;
-  font-weight:800;
-  transition:.3s;
 }
 
 .btn-dark{
   background:var(--dark);
-  color:white;
+  color:#fff;
 }
 
-.btn-light{
-  border:1px solid var(--line);
-  background:rgba(255,255,255,.45);
-}
-
-.btn:hover{
+.btn-dark:hover{
+  background:var(--brown);
   transform:translateY(-3px);
-  box-shadow:0 15px 35px rgba(0,0,0,.12);
 }
 
-.hero-visual{
-  position:relative;
+.btn-outline{
+  border:1px solid #cfc5b9;
+  background:#fff;
+}
+
+.btn-outline:hover{
+  border-color:var(--brown);
+  color:var(--brown);
+}
+
+.hero-location{
+  margin-top:38px;
+  color:#8b847c;
+  font-size:11px;
 }
 
 .hero-image{
-  height:610px;
-  border-radius:32px;
-  overflow:hidden;
   position:relative;
-  background:
-    linear-gradient(135deg,#b99b7b,#67503b);
-  box-shadow:var(--shadow);
-}
-
-/*
- Replace this background with the owner's
- approved showroom image.
-*/
-
-.hero-image::before{
-  content:"SHOWROOM IMAGE";
-  position:absolute;
-  inset:0;
-  display:grid;
-  place-items:center;
-  color:rgba(255,255,255,.35);
-  font-size:13px;
-  letter-spacing:4px;
-  font-weight:800;
+  min-height:700px;
+  overflow:hidden;
 }
 
 .hero-image img{
-  position:relative;
-  z-index:1;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
 }
 
-.hero-image.no-photo img{
-  display:none;
-}
-
-.hero-tag{
+.hero-badge{
   position:absolute;
-  z-index:3;
-  background:var(--paper);
-  padding:15px 17px;
-  border-radius:16px;
-  box-shadow:0 20px 50px rgba(0,0,0,.18);
-  font-size:11px;
-  font-weight:800;
+  right:28px;
+  bottom:28px;
+  background:rgba(255,255,255,.95);
+  padding:20px 22px;
+  width:210px;
+  box-shadow:0 18px 45px rgba(0,0,0,.14);
 }
 
-.hero-tag small{
+.hero-badge small{
+  color:var(--brown);
+  text-transform:uppercase;
+  letter-spacing:2px;
+  font-size:9px;
+  font-weight:700;
+}
+
+.hero-badge strong{
   display:block;
-  margin-top:4px;
-  color:var(--muted);
-  font-weight:500;
+  font-family:"Playfair Display",serif;
+  font-size:21px;
+  margin-top:5px;
 }
 
-.tag-one{
-  top:25px;
-  left:-25px;
-  transform:rotate(-4deg);
-}
+/* MARQUEE */
 
-.tag-two{
-  right:-25px;
-  bottom:35px;
-  transform:rotate(4deg);
-}
-
-/* =========================
-   TICKER
-========================= */
-
-.ticker{
+.marquee{
   background:var(--dark);
-  color:white;
-  padding:15px 0;
+  color:#fff;
   overflow:hidden;
   white-space:nowrap;
+  padding:15px 0;
 }
 
-.ticker-track{
-  display:inline-flex;
-  gap:40px;
-  animation:move 22s linear infinite;
+.marquee-track{
+  display:inline-block;
+  animation:marquee 25s linear infinite;
   font-size:10px;
-  font-weight:800;
-  letter-spacing:1.7px;
+  letter-spacing:3px;
+  text-transform:uppercase;
 }
 
-.ticker-track span{
-  color:#c8a477;
+.marquee-track span{
+  color:#c6a181;
+  margin:0 30px;
 }
 
-@keyframes move{
+@keyframes marquee{
   from{transform:translateX(0)}
   to{transform:translateX(-50%)}
 }
 
-/* =========================
-   COMMON
-========================= */
+/* GENERAL */
 
 section{
-  padding:105px 25px;
+  padding:105px 7%;
 }
 
-.container{
-  max-width:1250px;
-  margin:auto;
+.section-head{
+  display:flex;
+  align-items:end;
+  justify-content:space-between;
+  gap:30px;
+  margin-bottom:45px;
 }
 
 .kicker{
   color:var(--brown);
   text-transform:uppercase;
-  letter-spacing:2px;
-  font-size:9px;
-  font-weight:800;
+  letter-spacing:3px;
+  font-size:10px;
+  font-weight:700;
   margin-bottom:12px;
 }
 
-h2{
+.section-title{
   font-family:"Playfair Display",serif;
-  font-size:clamp(40px,5vw,62px);
-  line-height:1;
-  letter-spacing:-2px;
-  font-weight:500;
+  font-size:clamp(42px,5vw,67px);
+  line-height:.95;
+  letter-spacing:-3px;
 }
 
-.section-head{
-  display:flex;
-  justify-content:space-between;
-  align-items:end;
-  gap:30px;
-  margin-bottom:45px;
-}
-
-.section-description{
-  max-width:420px;
+.section-text{
+  max-width:410px;
   color:var(--muted);
-  font-size:13px;
+  font-size:14px;
   line-height:1.8;
 }
 
-/* =========================
-   CATEGORIES
-========================= */
-
-.categories{
-  background:var(--paper);
-}
-
-.category-grid{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:16px;
-}
-
-.category{
-  height:380px;
-  position:relative;
-  overflow:hidden;
-  border-radius:22px;
-  background:linear-gradient(145deg,#cbb69e,#6e5843);
-}
-
-.category img{
-  transition:.7s;
-}
-
-.category:hover img{
-  transform:scale(1.07);
-}
-
-.category::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:linear-gradient(
-    transparent 35%,
-    rgba(0,0,0,.78)
-  );
-}
-
-.category-content{
-  position:absolute;
-  z-index:2;
-  left:21px;
-  right:21px;
-  bottom:22px;
-  color:white;
-}
-
-.category-content small{
-  text-transform:uppercase;
-  letter-spacing:1.5px;
-  font-size:8px;
-  opacity:.75;
-}
-
-.category-content h3{
-  font-family:"Playfair Display",serif;
-  font-size:29px;
-  margin-top:5px;
-}
-
-/* =========================
-   ABOUT
-========================= */
-
-.about{
-  background:var(--bg);
-}
-
-.about-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:80px;
-  align-items:center;
-}
-
-.about-photo{
-  height:550px;
-  border-radius:28px;
-  overflow:hidden;
-  background:linear-gradient(145deg,#bca183,#654d39);
-  position:relative;
-}
-
-.about-photo::after{
-  content:"STORE / PRODUCT PHOTO";
-  position:absolute;
-  inset:0;
-  display:grid;
-  place-items:center;
-  color:rgba(255,255,255,.35);
-  font-size:11px;
-  font-weight:800;
-  letter-spacing:3px;
-}
-
-.about-copy p{
-  color:var(--muted);
-  font-size:14px;
-  line-height:1.9;
-  margin-top:24px;
-}
-
-.about-list{
-  margin-top:30px;
-  display:grid;
-  gap:14px;
-}
-
-.about-item{
-  display:flex;
-  align-items:center;
-  gap:13px;
-  font-size:12px;
-  font-weight:700;
-}
-
-.check{
-  width:29px;
-  height:29px;
-  border-radius:50%;
-  background:#e4d5c2;
-  display:grid;
-  place-items:center;
-  color:var(--brown);
-}
-
-/* =========================
-   COLLECTION
-========================= */
-
-.collection{
-  background:var(--dark);
-  color:white;
-}
-
-.collection .kicker{
-  color:#c9a16d;
-}
-
-.collection .section-description{
-  color:#aaa098;
-}
+/* COLLECTION */
 
 .collection-grid{
-  display:grid;
-  grid-template-columns:1.25fr .75fr;
-  gap:18px;
-}
-
-.product-card{
-  position:relative;
-  min-height:470px;
-  border-radius:25px;
-  overflow:hidden;
-  background:linear-gradient(145deg,#74604e,#30271f);
-}
-
-.product-card img{
-  transition:.7s;
-}
-
-.product-card:hover img{
-  transform:scale(1.05);
-}
-
-.product-card::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:linear-gradient(
-    transparent 30%,
-    rgba(0,0,0,.8)
-  );
-}
-
-.product-info{
-  position:absolute;
-  z-index:3;
-  left:24px;
-  bottom:24px;
-}
-
-.product-info span{
-  background:#f2e4d2;
-  color:#35291f;
-  padding:6px 9px;
-  border-radius:100px;
-  font-size:8px;
-  font-weight:900;
-  text-transform:uppercase;
-  letter-spacing:1px;
-}
-
-.product-info h3{
-  font-family:"Playfair Display",serif;
-  font-size:30px;
-  margin-top:10px;
-}
-
-.product-info p{
-  color:#d2c8bd;
-  font-size:11px;
-  margin-top:5px;
-}
-
-.small-products{
-  display:grid;
-  gap:18px;
-}
-
-.small-product{
-  min-height:226px;
-}
-
-/* =========================
-   STICKER
-========================= */
-
-.sticker{
-  position:absolute;
-  z-index:5;
-  top:20px;
-  right:20px;
-  width:78px;
-  height:78px;
-  border-radius:50%;
-  background:#d9b47d;
-  color:#241b13;
-  display:grid;
-  place-items:center;
-  text-align:center;
-  font-size:8px;
-  font-weight:900;
-  line-height:1.2;
-  transform:rotate(10deg);
-  box-shadow:0 10px 25px rgba(0,0,0,.2);
-}
-
-/* =========================
-   GALLERY
-========================= */
-
-.gallery{
-  background:var(--paper);
-}
-
-.gallery-grid{
-  display:grid;
-  grid-template-columns:1.25fr .75fr .75fr;
-  grid-template-rows:260px 260px;
-  gap:15px;
-}
-
-.gallery-item{
-  border-radius:20px;
-  overflow:hidden;
-  position:relative;
-  background:linear-gradient(145deg,#cbb79f,#765e47);
-}
-
-.gallery-item:first-child{
-  grid-row:span 2;
-}
-
-.gallery-item img{
-  transition:.6s;
-}
-
-.gallery-item:hover img{
-  transform:scale(1.06);
-}
-
-/* =========================
-   WHY US
-========================= */
-
-.features{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:15px;
-}
-
-.feature{
-  background:var(--paper);
-  padding:30px 25px;
-  border:1px solid var(--line);
-  border-radius:22px;
-  transition:.3s;
-}
-
-.feature:hover{
-  transform:translateY(-6px);
-  box-shadow:var(--shadow);
-}
-
-.feature-icon{
-  font-size:25px;
-  margin-bottom:22px;
-}
-
-.feature h3{
-  font-size:15px;
-  margin-bottom:9px;
-}
-
-.feature p{
-  color:var(--muted);
-  font-size:11px;
-  line-height:1.7;
-}
-
-/* =========================
-   REVIEWS
-========================= */
-
-.reviews{
-  background:#e9e0d4;
-}
-
-.rating{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  margin-top:22px;
-}
-
-.stars{
-  color:#a97838;
-  letter-spacing:2px;
-}
-
-.review-grid{
   display:grid;
   grid-template-columns:repeat(3,1fr);
   gap:17px;
 }
 
-.review{
-  background:var(--paper);
-  padding:28px;
-  border-radius:23px;
-  border:1px solid var(--line);
-}
-
-.review-mark{
-  font-family:"Playfair Display",serif;
-  font-size:42px;
-  color:var(--gold);
-  line-height:.6;
-}
-
-.review p{
-  margin-top:20px;
-  color:#514940;
-  font-size:13px;
-  line-height:1.8;
-}
-
-.review-user{
-  margin-top:20px;
-  font-size:10px;
-  font-weight:800;
-  text-transform:uppercase;
-  letter-spacing:1px;
-  color:var(--muted);
-}
-
-/* =========================
-   CTA
-========================= */
-
-.cta{
-  padding-top:80px;
-  padding-bottom:80px;
-}
-
-.cta-box{
-  background:var(--dark);
-  color:white;
-  border-radius:32px;
-  padding:70px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:35px;
+.collection-card{
   position:relative;
+  height:530px;
+  overflow:hidden;
+  background:#ddd;
+}
+
+.collection-card img{
+  height:100%;
+  object-fit:cover;
+  transition:.8s cubic-bezier(.2,.7,.2,1);
+}
+
+.collection-card:hover img{
+  transform:scale(1.07);
+}
+
+.collection-overlay{
+  position:absolute;
+  inset:0;
+  display:flex;
+  flex-direction:column;
+  justify-content:end;
+  padding:30px;
+  color:#fff;
+  background:linear-gradient(
+    to top,
+    rgba(0,0,0,.72),
+    rgba(0,0,0,0) 62%
+  );
+}
+
+.collection-number{
+  font-size:9px;
+  letter-spacing:3px;
+  margin-bottom:8px;
+  opacity:.75;
+}
+
+.collection-overlay h3{
+  font-family:"Playfair Display",serif;
+  font-size:32px;
+  font-weight:500;
+}
+
+/* ABOUT */
+
+.about{
+  background:#e9e2d8;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:75px;
+  align-items:center;
+}
+
+.about-image{
+  height:610px;
   overflow:hidden;
 }
 
-.cta-box::before{
-  content:"";
-  width:400px;
-  height:400px;
-  border-radius:50%;
-  background:#775638;
-  filter:blur(90px);
-  opacity:.3;
-  position:absolute;
-  right:-100px;
-  top:-200px;
+.about-image img{
+  height:100%;
+  object-fit:cover;
 }
 
-.cta-content{
-  position:relative;
-  z-index:2;
+.about-content h2{
+  font-family:"Playfair Display",serif;
+  font-size:clamp(42px,5vw,68px);
+  line-height:.95;
+  letter-spacing:-3px;
+  margin-bottom:28px;
 }
 
-.cta h2{
-  max-width:650px;
+.about-content h2 em{
+  color:var(--brown);
+  font-weight:500;
 }
 
-.cta p{
-  margin-top:18px;
-  color:#aaa39b;
+.about-content p{
+  color:var(--muted);
+  font-size:15px;
+  line-height:1.9;
+  max-width:500px;
+}
+
+.about-points{
+  margin-top:30px;
+  display:grid;
+  gap:14px;
+}
+
+.point{
+  display:flex;
+  gap:14px;
+  align-items:center;
   font-size:13px;
+  font-weight:600;
 }
 
-/* =========================
-   CONTACT
-========================= */
+.point span{
+  width:28px;
+  height:28px;
+  border:1px solid #c4b6a6;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  font-size:10px;
+  color:var(--brown);
+}
 
-.contact{
+/* LOOKBOOK */
+
+.lookbook{
   background:var(--paper);
 }
 
-.contact-grid{
+.gallery{
   display:grid;
-  grid-template-columns:.8fr 1.2fr;
-  gap:70px;
-}
-
-.contact-info p{
-  color:var(--muted);
-  line-height:1.8;
-  font-size:13px;
-  margin-top:20px;
-}
-
-.contact-details{
-  margin-top:30px;
-  display:grid;
-  gap:18px;
-}
-
-.contact-detail{
-  display:flex;
+  grid-template-columns:1.1fr .8fr 1fr;
+  grid-template-rows:300px 300px;
   gap:14px;
-  align-items:flex-start;
 }
 
-.contact-detail strong{
-  font-size:12px;
-  display:block;
+.gallery-item{
+  overflow:hidden;
 }
 
-.contact-detail span{
-  color:var(--muted);
-  font-size:11px;
-  display:block;
-  margin-top:3px;
+.gallery-item img{
+  height:100%;
+  object-fit:cover;
+  transition:.6s;
 }
 
-.form{
+.gallery-item:hover img{
+  transform:scale(1.05);
+}
+
+.tall{
+  grid-row:span 2;
+}
+
+/* FEATURES */
+
+.features{
   display:grid;
-  gap:13px;
+  grid-template-columns:repeat(4,1fr);
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
 }
 
-input,
-textarea{
-  width:100%;
-  border:1px solid var(--line);
-  background:#f8f4ed;
-  padding:15px 16px;
-  border-radius:13px;
-  outline:none;
+.feature{
+  padding:35px 25px;
+  border-right:1px solid var(--line);
+}
+
+.feature:last-child{
+  border-right:none;
+}
+
+.feature-icon{
+  font-size:21px;
+  color:var(--brown);
+  margin-bottom:17px;
+}
+
+.feature h4{
+  font-size:14px;
+  margin-bottom:8px;
+}
+
+.feature p{
+  color:var(--muted);
+  font-size:12px;
+  line-height:1.7;
+}
+
+/* SHOWROOM CTA */
+
+.showroom{
+  background:var(--dark);
+  color:#fff;
+  text-align:center;
+  padding:115px 7%;
+}
+
+.showroom .kicker{
+  color:#c49b79;
+}
+
+.showroom h2{
+  font-family:"Playfair Display",serif;
+  font-size:clamp(48px,7vw,88px);
+  line-height:.94;
+  letter-spacing:-4px;
+  font-weight:500;
+  max-width:850px;
+  margin:0 auto 25px;
+}
+
+.showroom p{
+  max-width:530px;
+  margin:auto;
+  color:#aaa7a1;
+  font-size:14px;
+  line-height:1.8;
+}
+
+.showroom-actions{
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-top:32px;
+}
+
+.btn-white{
+  background:#fff;
   color:var(--dark);
 }
 
-textarea{
-  min-height:130px;
-  resize:vertical;
+.btn-brown{
+  border:1px solid #55514b;
+  color:#fff;
 }
 
-input:focus,
-textarea:focus{
-  border-color:var(--brown);
+.btn-brown:hover{
+  background:#fff;
+  color:var(--dark);
 }
 
-.form button{
-  border:0;
-  cursor:pointer;
-}
-
-/* =========================
-   FOOTER
-========================= */
+/* FOOTER */
 
 footer{
-  background:#11100e;
-  color:white;
-  padding:35px 25px;
+  background:var(--dark);
+  color:#fff;
+  padding:55px 7% 25px;
 }
 
-.footer{
-  max-width:1250px;
-  margin:auto;
+.footer-top{
   display:flex;
   justify-content:space-between;
-  gap:20px;
-  align-items:center;
+  gap:40px;
+  padding-bottom:40px;
+  border-bottom:1px solid #393732;
 }
 
-.footer small{
-  color:#88827b;
+.footer-logo{
+  font-family:"Playfair Display",serif;
+  font-size:30px;
+}
+
+.footer-logo span{
+  color:#c39a78;
+}
+
+.footer-links{
+  display:flex;
+  gap:25px;
+  color:#aaa6a0;
+  font-size:11px;
+}
+
+.footer-links a:hover{
+  color:#fff;
+}
+
+.footer-bottom{
+  padding-top:22px;
+  display:flex;
+  justify-content:space-between;
+  color:#706d68;
   font-size:10px;
 }
 
-.footer-brand{
-  font-family:"Playfair Display",serif;
-  font-size:18px;
+/* REVEAL */
+
+.reveal{
+  opacity:0;
+  transform:translateY(35px);
+  transition:opacity .8s ease,transform .8s ease;
 }
 
-/* =========================
-   WHATSAPP
-========================= */
-
-.whatsapp{
-  position:fixed;
-  right:20px;
-  bottom:20px;
-  z-index:999;
-  width:58px;
-  height:58px;
-  border-radius:50%;
-  background:#171411;
-  color:white;
-  display:grid;
-  place-items:center;
-  font-size:23px;
-  box-shadow:0 15px 35px rgba(0,0,0,.25);
-  transition:.3s;
+.reveal.show{
+  opacity:1;
+  transform:none;
 }
 
-.whatsapp:hover{
-  transform:translateY(-5px) scale(1.04);
-}
-
-/* =========================
-   MOBILE
-========================= */
+/* MOBILE */
 
 @media(max-width:900px){
+
+  nav{
+    height:70px;
+    padding:0 5%;
+  }
 
   .nav-links{
     display:none;
@@ -955,997 +631,705 @@ footer{
 
   .hero{
     grid-template-columns:1fr;
-    padding-top:45px;
-    gap:45px;
+  }
+
+  .hero-content{
+    padding:65px 7%;
+  }
+
+  .hero h1{
+    font-size:65px;
   }
 
   .hero-image{
-    height:480px;
+    min-height:570px;
   }
-
-  .category-grid{
-    grid-template-columns:1fr 1fr;
-  }
-
-  .about-grid{
-    grid-template-columns:1fr;
-    gap:45px;
-  }
-
-  .collection-grid{
-    grid-template-columns:1fr;
-  }
-
-  .features{
-    grid-template-columns:1fr 1fr;
-  }
-
-  .review-grid{
-    grid-template-columns:1fr;
-  }
-
-  .contact-grid{
-    grid-template-columns:1fr;
-    gap:45px;
-  }
-
-  .cta-box{
-    padding:45px 30px;
-    flex-direction:column;
-    align-items:flex-start;
-  }
-
-}
-
-@media(max-width:600px){
 
   section{
-    padding:75px 18px;
-  }
-
-  .nav{
-    padding:13px 18px;
-  }
-
-  .nav-cta{
-    padding:10px 14px;
-  }
-
-  .hero{
-    padding:40px 18px 70px;
-  }
-
-  h1{
-    font-size:58px;
-    letter-spacing:-3px;
-  }
-
-  .hero-image{
-    height:430px;
-    border-radius:24px;
-  }
-
-  .tag-one{
-    left:10px;
-  }
-
-  .tag-two{
-    right:10px;
+    padding:75px 6%;
   }
 
   .section-head{
     display:block;
   }
 
-  .section-description{
-    margin-top:20px;
+  .section-text{
+    margin-top:18px;
   }
 
-  .category-grid{
+  .collection-grid{
     grid-template-columns:1fr;
   }
 
-  .category{
-    height:330px;
+  .collection-card{
+    height:500px;
   }
 
-  .about-photo{
+  .about{
+    grid-template-columns:1fr;
+    gap:40px;
+  }
+
+  .about-image{
+    height:500px;
+  }
+
+  .gallery{
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:240px 240px 240px;
+  }
+
+  .features{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .feature:nth-child(2){
+    border-right:none;
+  }
+
+  .feature:nth-child(1),
+  .feature:nth-child(2){
+    border-bottom:1px solid var(--line);
+  }
+
+  .footer-top{
+    flex-direction:column;
+  }
+}
+
+@media(max-width:560px){
+
+  .demo-bar{
+    font-size:8px;
+    letter-spacing:1.5px;
+  }
+
+  .logo{
+    font-size:21px;
+  }
+
+  .hero-content{
+    padding:55px 6%;
+  }
+
+  .hero h1{
+    font-size:55px;
+    letter-spacing:-3px;
+  }
+
+  .hero-description{
+    font-size:14px;
+  }
+
+  .hero-image{
+    min-height:480px;
+  }
+
+  .hero-badge{
+    right:15px;
+    bottom:15px;
+  }
+
+  .collection-card{
+    height:460px;
+  }
+
+  .about-image{
     height:420px;
   }
 
-  .gallery-grid{
-    display:grid;
+  .gallery{
     grid-template-columns:1fr 1fr;
-    grid-template-rows:220px 180px 180px;
-  }
-
-  .gallery-item:first-child{
-    grid-column:span 2;
-    grid-row:auto;
+    grid-template-rows:210px 210px 210px;
+    gap:8px;
   }
 
   .features{
     grid-template-columns:1fr;
   }
 
-  .cta-box{
-    border-radius:25px;
+  .feature{
+    border-right:none!important;
+    border-bottom:1px solid var(--line);
   }
 
-  .footer{
+  .feature:last-child{
+    border-bottom:none;
+  }
+
+  .showroom h2{
+    letter-spacing:-2px;
+  }
+
+  .footer-links{
+    flex-wrap:wrap;
+  }
+
+  .footer-bottom{
     flex-direction:column;
-    align-items:flex-start;
-  }
-
-}
-
-/* =========================
-   SIMPLE FADE
-========================= */
-
-.reveal{
-  animation:fadeUp .8s ease both;
-}
-
-@keyframes fadeUp{
-  from{
-    opacity:0;
-    transform:translateY(18px);
-  }
-  to{
-    opacity:1;
-    transform:translateY(0);
+    gap:10px;
   }
 }
-
 </style>
 </head>
 
 <body>
 
-<!-- DEMO NOTICE -->
+<!-- DEMO DISCLAIMER -->
 <div class="demo-bar">
-  <span>CONCEPT DEMO</span>
-  &nbsp;•&nbsp;
-  NOT AN OFFICIAL WEBSITE
-  &nbsp;•&nbsp;
-  CREATED FOR PRESENTATION PURPOSES
+  CONCEPT DEMO — NOT AN OFFICIAL WEBSITE
 </div>
 
-
 <!-- NAVIGATION -->
-<header>
+<nav>
 
-  <nav class="nav">
+  <a href="#" class="logo">
+    Home Style <span>Furniture Mart</span>
+  </a>
 
-    <a href="#" class="logo">
+  <div class="nav-links">
+    <a href="#collections">Collections</a>
+    <a href="#story">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#visit">Visit</a>
+  </div>
 
-      <div class="logo-box">
-        HS
-      </div>
+  <a href="tel:+918449311567" class="nav-btn">
+    Call Store
+  </a>
 
-      <div class="logo-text">
-        <strong>Home Style</strong>
-        <small>Furniture Mart</small>
-      </div>
-
-    </a>
-
-    <div class="nav-links">
-
-      <a href="#collections">Collections</a>
-      <a href="#about">About</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#contact">Contact</a>
-
-      <a
-        href="https://wa.me/918449311567"
-        class="nav-cta"
-        target="_blank"
-      >
-        WhatsApp
-      </a>
-
-    </div>
-
-  </nav>
-
-</header>
-
+</nav>
 
 <!-- HERO -->
+<header class="hero">
 
-<main>
+  <div class="hero-content reveal">
 
-<section class="hero">
-
-  <div class="hero-copy reveal">
-
-    <div class="pill">
-      <i class="dot"></i>
-      Furniture • Mattresses • Home
+    <div class="eyebrow">
+      Khatima · Furniture
     </div>
 
     <h1>
-      Make your<br>
-      home feel <em>better.</em>
+      Make<br>
+      Room for<br>
+      <em>Beautiful.</em>
     </h1>
 
-    <p class="hero-text">
-      Discover furniture and home essentials designed to bring
-      comfort, character and style into your everyday spaces.
+    <p class="hero-description">
+      Furniture that brings comfort, character and a sense of home
+      to every corner — from everyday living spaces to statement pieces.
     </p>
 
     <div class="hero-actions">
 
       <a href="#collections" class="btn btn-dark">
-        Explore Collection →
+        Explore Furniture →
       </a>
 
-      <a
-        href="https://wa.me/918449311567?text=Hi%20Home%20Style%20Furniture%20Mart%2C%20I%20want%20to%20know%20more%20about%20your%20products."
-        class="btn btn-light"
-        target="_blank"
-      >
-        Enquire on WhatsApp
+      <a href="tel:+918449311567" class="btn btn-outline">
+        Call Store
       </a>
 
     </div>
 
-  </div>
-
-
-  <div class="hero-visual">
-
-    <div class="hero-tag tag-one">
-      CURATED FOR HOME
-      <small>Furniture • Comfort • Style</small>
-    </div>
-
-    <div class="hero-image no-photo">
-
-      <!--
-      REPLACE WITH OWNER-APPROVED SHOP PHOTO
-
-      Example:
-      <img src="YOUR-APPROVED-SHOWROOM-IMAGE.jpg" alt="Home Style Furniture Mart showroom">
-      -->
-
-    </div>
-
-    <div class="hero-tag tag-two">
-      KHATIMA
-      <small>Uttarakhand</small>
+    <div class="hero-location">
+      SH 29 · Bhujia No. 3 · Khatima, Uttarakhand
     </div>
 
   </div>
 
-</section>
+  <div class="hero-image">
 
-
-<!-- TICKER -->
-
-<div class="ticker">
-
-  <div class="ticker-track">
-
-    <span>HOME STYLE</span>
-    COMFORT
-    <span>FURNITURE</span>
-    BEDROOM
-    <span>LIVING ROOM</span>
-    MATTRESSES
-    <span>HOME ESSENTIALS</span>
-    KHATIMA
-
-    <span>HOME STYLE</span>
-    COMFORT
-    <span>FURNITURE</span>
-    BEDROOM
-    <span>LIVING ROOM</span>
-    MATTRESSES
-    <span>HOME ESSENTIALS</span>
-    KHATIMA
-
-  </div>
-
-</div>
-
-
-<!-- CATEGORIES -->
-
-<section class="categories" id="collections">
-
-<div class="container">
-
-  <div class="section-head">
-
-    <div>
-      <div class="kicker">Explore</div>
-      <h2>Made for<br>every room.</h2>
-    </div>
-
-    <p class="section-description">
-      From living-room comfort to better sleep,
-      explore furniture and home essentials for
-      different corners of your home.
-    </p>
-
-  </div>
-
-
-  <div class="category-grid">
-
-    <article class="category">
-
-      <!-- OWNER APPROVED IMAGE -->
-      <!-- <img src="YOUR-SOFA-IMAGE.jpg" alt="Sofas"> -->
-
-      <div class="category-content">
-        <small>01 / Living</small>
-        <h3>Sofas</h3>
-      </div>
-
-    </article>
-
-
-    <article class="category">
-
-      <!-- OWNER APPROVED IMAGE -->
-      <!-- <img src="YOUR-BED-IMAGE.jpg" alt="Beds"> -->
-
-      <div class="category-content">
-        <small>02 / Bedroom</small>
-        <h3>Beds</h3>
-      </div>
-
-    </article>
-
-
-    <article class="category">
-
-      <!-- OWNER APPROVED IMAGE -->
-      <!-- <img src="YOUR-MATTRESS-IMAGE.jpg" alt="Mattresses"> -->
-
-      <div class="category-content">
-        <small>03 / Comfort</small>
-        <h3>Mattresses</h3>
-      </div>
-
-    </article>
-
-
-    <article class="category">
-
-      <!-- OWNER APPROVED IMAGE -->
-      <!-- <img src="YOUR-FURNITURE-IMAGE.jpg" alt="Furniture"> -->
-
-      <div class="category-content">
-        <small>04 / Home</small>
-        <h3>Furniture</h3>
-      </div>
-
-    </article>
-
-  </div>
-
-</div>
-
-</section>
-
-
-<!-- ABOUT -->
-
-<section class="about" id="about">
-
-<div class="container about-grid">
-
-  <div class="about-photo">
-
-    <!-- OWNER APPROVED STORE PHOTO -->
-    <!--
+    <!-- YOUR ACTUAL SHOWROOM PHOTO -->
     <img
-      src="YOUR-STORE-IMAGE.jpg"
-      alt="Home Style Furniture Mart"
+      src="images/1000013918.jpg"
+      alt="Home Style Furniture Mart showroom"
     >
-    -->
+
+    <div class="hero-badge">
+      <small>Home essentials</small>
+      <strong>Furniture made for living.</strong>
+    </div>
 
   </div>
 
+</header>
 
-  <div class="about-copy">
+<!-- MARQUEE -->
+<div class="marquee">
 
-    <div class="kicker">About the store</div>
+  <div class="marquee-track">
 
-    <h2>
-      Furniture that
-      feels like home.
-    </h2>
+    SOFAS <span>✦</span>
+    DINING <span>✦</span>
+    BEDROOM <span>✦</span>
+    HOME DECOR <span>✦</span>
+    LIVING SPACES <span>✦</span>
+    KHATIMA <span>✦</span>
 
-    <p>
-      Home Style Furniture Mart is a local furniture destination
-      in Khatima, offering furniture, mattresses and home
-      essentials for everyday living.
-    </p>
-
-    <p>
-      Whether you're refreshing one room or setting up an entire
-      home, the right piece can completely change the way a
-      space feels.
-    </p>
-
-
-    <div class="about-list">
-
-      <div class="about-item">
-        <div class="check">✓</div>
-        Furniture for everyday living
-      </div>
-
-      <div class="about-item">
-        <div class="check">✓</div>
-        Mattress & sleep essentials
-      </div>
-
-      <div class="about-item">
-        <div class="check">✓</div>
-        Local showroom in Khatima
-      </div>
-
-    </div>
+    SOFAS <span>✦</span>
+    DINING <span>✦</span>
+    BEDROOM <span>✦</span>
+    HOME DECOR <span>✦</span>
+    LIVING SPACES <span>✦</span>
+    KHATIMA <span>✦</span>
 
   </div>
 
 </div>
 
-</section>
+<!-- COLLECTIONS -->
+<section id="collections">
 
-
-<!-- COLLECTION -->
-
-<section class="collection">
-
-<div class="container">
-
-  <div class="section-head">
+  <div class="section-head reveal">
 
     <div>
-      <div class="kicker">Featured</div>
-      <h2>Pieces worth<br>coming home to.</h2>
+      <div class="kicker">The collection</div>
+
+      <h2 class="section-title">
+        Furniture for<br>
+        every corner.
+      </h2>
     </div>
 
-    <p class="section-description">
-      A visual concept section for showcasing
-      selected products from the showroom.
+    <p class="section-text">
+      Build a space that feels like yours — comfortable,
+      functional and made to be lived in.
     </p>
 
   </div>
-
 
   <div class="collection-grid">
 
-    <article class="product-card">
+    <!-- SOFAS -->
 
-      <div class="sticker">
-        HOME<br>
-        STYLE<br>
-        PICK
-      </div>
+    <a href="#visit" class="collection-card reveal">
 
-      <!-- OWNER APPROVED PRODUCT IMAGE -->
-      <!-- <img src="YOUR-SOFA-IMAGE.jpg" alt="Furniture collection"> -->
+      <img
+        src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1100&q=90"
+        alt="Modern sofa collection"
+      >
 
-      <div class="product-info">
+      <div class="collection-overlay">
 
-        <span>Living Room</span>
-
-        <h3>Comfort, styled.</h3>
-
-        <p>
-          Replace with actual product details
-          after confirmation.
-        </p>
-
-      </div>
-
-    </article>
-
-
-    <div class="small-products">
-
-      <article class="product-card small-product">
-
-        <!-- OWNER APPROVED PRODUCT IMAGE -->
-        <!-- <img src="YOUR-BED-IMAGE.jpg" alt="Bedroom furniture"> -->
-
-        <div class="product-info">
-
-          <span>Bedroom</span>
-
-          <h3>Sleep better.</h3>
-
+        <div class="collection-number">
+          01 / LIVING
         </div>
 
-      </article>
+        <h3>
+          Sofas & Living
+        </h3>
 
+      </div>
 
-      <article class="product-card small-product">
+    </a>
 
-        <!-- OWNER APPROVED PRODUCT IMAGE -->
-        <!-- <img src="YOUR-MATTRESS-IMAGE.jpg" alt="Mattress collection"> -->
+    <!-- DINING -->
 
-        <div class="product-info">
+    <a href="#visit" class="collection-card reveal">
 
-          <span>Mattresses</span>
+      <img
+        src="https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=1100&q=90"
+        alt="Dining furniture"
+      >
 
-          <h3>Better comfort.</h3>
+      <div class="collection-overlay">
 
+        <div class="collection-number">
+          02 / DINING
         </div>
 
-      </article>
-
-    </div>
-
-  </div>
-
-</div>
-
-</section>
-
-
-<!-- GALLERY -->
-
-<section class="gallery" id="gallery">
-
-<div class="container">
-
-  <div class="section-head">
-
-    <div>
-      <div class="kicker">Showroom</div>
-      <h2>A glimpse of<br>Home Style.</h2>
-    </div>
-
-    <p class="section-description">
-      Replace these visual slots with verified
-      showroom and product photography.
-    </p>
-
-  </div>
-
-
-  <div class="gallery-grid">
-
-    <div class="gallery-item">
-      <!-- <img src="YOUR-IMAGE-1.jpg" alt="Showroom"> -->
-    </div>
-
-    <div class="gallery-item">
-      <!-- <img src="YOUR-IMAGE-2.jpg" alt="Furniture"> -->
-    </div>
-
-    <div class="gallery-item">
-      <!-- <img src="YOUR-IMAGE-3.jpg" alt="Furniture collection"> -->
-    </div>
-
-    <div class="gallery-item">
-      <!-- <img src="YOUR-IMAGE-4.jpg" alt="Home furniture"> -->
-    </div>
-
-    <div class="gallery-item">
-      <!-- <img src="YOUR-IMAGE-5.jpg" alt="Home Style Furniture"> -->
-    </div>
-
-  </div>
-
-</div>
-
-</section>
-
-
-<!-- WHY -->
-
-<section>
-
-<div class="container">
-
-  <div class="section-head">
-
-    <div>
-      <div class="kicker">Why Home Style</div>
-      <h2>Simple things.<br>Done well.</h2>
-    </div>
-
-  </div>
-
-
-  <div class="features">
-
-    <div class="feature">
-
-      <div class="feature-icon">⌂</div>
-
-      <h3>Home-focused</h3>
-
-      <p>
-        Furniture and essentials designed around
-        everyday home spaces.
-      </p>
-
-    </div>
-
-
-    <div class="feature">
-
-      <div class="feature-icon">✦</div>
-
-      <h3>Quality conscious</h3>
-
-      <p>
-        Product information and specifications can
-        be added after showroom confirmation.
-      </p>
-
-    </div>
-
-
-    <div class="feature">
-
-      <div class="feature-icon">◌</div>
-
-      <h3>Local showroom</h3>
-
-      <p>
-        Visit the store in Khatima and explore
-        products in person.
-      </p>
-
-    </div>
-
-
-    <div class="feature">
-
-      <div class="feature-icon">↗</div>
-
-      <h3>Easy enquiry</h3>
-
-      <p>
-        Contact the showroom directly through
-        WhatsApp for product enquiries.
-      </p>
-
-    </div>
-
-  </div>
-
-</div>
-
-</section>
-
-
-<!-- REVIEWS -->
-
-<section class="reviews">
-
-<div class="container">
-
-  <div class="section-head">
-
-    <div>
-
-      <div class="kicker">Customer feedback</div>
-
-      <h2>What shoppers<br>are saying.</h2>
-
-      <div class="rating">
-
-        <strong>4.8</strong>
-
-        <span class="stars">
-          ★★★★★
-        </span>
-
-        <span style="font-size:11px;color:#756d64;">
-          Listing rating
-        </span>
+        <h3>
+          Dining Spaces
+        </h3>
 
       </div>
 
-    </div>
+    </a>
 
-    <p class="section-description">
-      Review content shown here should be replaced
-      with verified, owner-approved public reviews
-      before the site is published.
-    </p>
+    <!-- BEDROOM -->
 
-  </div>
+    <a href="#visit" class="collection-card reveal">
 
+      <img
+        src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1100&q=90"
+        alt="Bedroom furniture"
+      >
 
-  <div class="review-grid">
+      <div class="collection-overlay">
 
-    <article class="review">
+        <div class="collection-number">
+          03 / BEDROOM
+        </div>
 
-      <div class="review-mark">“</div>
+        <h3>
+          Bedroom Comfort
+        </h3>
 
-      <p>
-        Customer review content goes here.
-        Replace this demo text with an actual
-        verified review.
-      </p>
-
-      <div class="review-user">
-        Verified public review
       </div>
 
-    </article>
-
-
-    <article class="review">
-
-      <div class="review-mark">“</div>
-
-      <p>
-        Customer review content goes here.
-        Replace this demo text with an actual
-        verified review.
-      </p>
-
-      <div class="review-user">
-        Verified public review
-      </div>
-
-    </article>
-
-
-    <article class="review">
-
-      <div class="review-mark">“</div>
-
-      <p>
-        Customer review content goes here.
-        Replace this demo text with an actual
-        verified review.
-      </p>
-
-      <div class="review-user">
-        Verified public review
-      </div>
-
-    </article>
-
-  </div>
-
-</div>
-
-</section>
-
-
-<!-- CTA -->
-
-<section class="cta">
-
-<div class="container">
-
-  <div class="cta-box">
-
-    <div class="cta-content">
-
-      <div class="kicker">
-        Visit the showroom
-      </div>
-
-      <h2>
-        Your next favourite
-        piece might be here.
-      </h2>
-
-      <p>
-        Have a product in mind? Ask the showroom
-        about availability, pricing and details.
-      </p>
-
-    </div>
-
-
-    <a
-      href="https://wa.me/918449311567?text=Hi%20Home%20Style%20Furniture%20Mart%2C%20I%20want%20to%20enquire%20about%20your%20furniture."
-      class="btn"
-      style="background:#fff;color:#171411;position:relative;z-index:2;"
-      target="_blank"
-    >
-      Chat on WhatsApp →
     </a>
 
   </div>
 
-</div>
-
 </section>
 
+<!-- STORY -->
+<section class="about" id="story">
 
-<!-- CONTACT -->
+  <div class="about-image reveal">
 
-<section class="contact" id="contact">
+    <img
+      src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=90"
+      alt="Modern home interior furniture"
+    >
 
-<div class="container contact-grid">
+  </div>
 
-  <div class="contact-info">
+  <div class="about-content reveal">
 
-    <div class="kicker">Find us</div>
+    <div class="kicker">
+      Your home, your style
+    </div>
 
     <h2>
-      Come see it<br>
-      for yourself.
+      Good furniture<br>
+      makes a house<br>
+      <em>feel like home.</em>
     </h2>
 
     <p>
-      Visit Home Style Furniture Mart in Khatima
-      and explore the available furniture and
-      home essentials.
+      Home Style Furniture Mart is a local furniture destination
+      in Khatima, offering furniture and home-focused pieces
+      for creating comfortable and stylish spaces.
     </p>
 
+    <div class="about-points">
 
-    <div class="contact-details">
-
-      <div class="contact-detail">
-
-        <div>⌖</div>
-
-        <div>
-          <strong>Location</strong>
-          <span>
-            SH 29, Bhujia No. 3, Charu Beta,
-            Khatima, Uttarakhand 262308
-          </span>
-        </div>
-
+      <div class="point">
+        <span>01</span>
+        Living room furniture
       </div>
 
-
-      <div class="contact-detail">
-
-        <div>◷</div>
-
-        <div>
-          <strong>Opening hours</strong>
-          <span>
-            Approx. 9:00 AM – 8:30 PM
-            <br>
-            Please confirm before publishing.
-          </span>
-        </div>
-
+      <div class="point">
+        <span>02</span>
+        Dining furniture
       </div>
 
+      <div class="point">
+        <span>03</span>
+        Bedroom essentials
+      </div>
 
-      <div class="contact-detail">
-
-        <div>☎</div>
-
-        <div>
-          <strong>Phone / WhatsApp</strong>
-
-          <span>
-            +91 84493 11567
-          </span>
-
-        </div>
-
+      <div class="point">
+        <span>04</span>
+        Home decor & accessories
       </div>
 
     </div>
 
   </div>
 
+</section>
 
-  <div>
+<!-- GALLERY -->
+<section class="lookbook" id="gallery">
 
-    <form
-      class="form"
-      onsubmit="sendWhatsApp(event)"
-    >
+  <div class="section-head reveal">
 
-      <input
-        id="name"
-        type="text"
-        placeholder="Your name"
-        required
-      >
+    <div>
 
-      <input
-        id="phone"
-        type="tel"
-        placeholder="Your phone number"
-        required
-      >
+      <div class="kicker">
+        Inspiration
+      </div>
 
-      <textarea
-        id="message"
-        placeholder="What are you looking for?"
-        required
-      ></textarea>
+      <h2 class="section-title">
+        Spaces worth<br>
+        coming home to.
+      </h2>
 
-      <button
-        class="btn btn-dark"
-        type="submit"
-      >
-        Send enquiry on WhatsApp →
-      </button>
+    </div>
 
-    </form>
+    <p class="section-text">
+      A visual showcase concept designed to give visitors
+      a quick feel for different furniture styles and spaces.
+    </p>
 
   </div>
 
-</div>
+  <div class="gallery">
+
+    <div class="gallery-item tall reveal">
+
+      <img
+        src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=90"
+        alt="Elegant living room"
+      >
+
+    </div>
+
+    <div class="gallery-item reveal">
+
+      <img
+        src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=900&q=90"
+        alt="Home furniture interior"
+      >
+
+    </div>
+
+    <div class="gallery-item reveal">
+
+      <img
+        src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=90"
+        alt="Living room furniture"
+      >
+
+    </div>
+
+    <div class="gallery-item reveal">
+
+      <img
+        src="https://images.unsplash.com/photo-1617104678098-de229db51175?auto=format&fit=crop&w=900&q=90"
+        alt="Dining room furniture"
+      >
+
+    </div>
+
+    <div class="gallery-item reveal">
+
+      <img
+        src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=90"
+        alt="Modern home interior"
+      >
+
+    </div>
+
+  </div>
 
 </section>
 
-</main>
+<!-- FEATURES -->
+<div class="features">
 
+  <div class="feature reveal">
 
-<!-- FOOTER -->
+    <div class="feature-icon">
+      ✦
+    </div>
 
-<footer>
+    <h4>
+      Living Spaces
+    </h4>
 
-<div class="footer">
+    <p>
+      Furniture designed around everyday comfort and style.
+    </p>
 
-  <div class="footer-brand">
-    Home Style Furniture Mart
   </div>
 
-  <small>
-    © 2026 Home Style Furniture Mart · Khatima
-  </small>
+  <div class="feature reveal">
+
+    <div class="feature-icon">
+      ◌
+    </div>
+
+    <h4>
+      Dining
+    </h4>
+
+    <p>
+      Bring people together around a space that feels right.
+    </p>
+
+  </div>
+
+  <div class="feature reveal">
+
+    <div class="feature-icon">
+      ⌂
+    </div>
+
+    <h4>
+      Bedroom
+    </h4>
+
+    <p>
+      Comfortable pieces for the spaces where you recharge.
+    </p>
+
+  </div>
+
+  <div class="feature reveal">
+
+    <div class="feature-icon">
+      ♡
+    </div>
+
+    <h4>
+      Visit In Person
+    </h4>
+
+    <p>
+      See furniture up close and explore the showroom yourself.
+    </p>
+
+  </div>
 
 </div>
 
+<!-- SHOWROOM CTA -->
+<section class="showroom" id="visit">
+
+  <div class="kicker">
+    Visit the showroom
+  </div>
+
+  <h2>
+    See it.<br>
+    Sit on it.<br>
+    Love it.
+  </h2>
+
+  <p>
+    Find Home Style Furniture Mart at SH 29,
+    Bhujia No. 3, Khatima, Uttarakhand.
+    For current availability and product details,
+    contact the store directly.
+  </p>
+
+  <div class="showroom-actions">
+
+    <a
+      href="https://www.google.com/maps/search/?api=1&query=Home+Style+Furniture+Mart+Bhujia+No.3+Khatima"
+      target="_blank"
+      class="btn btn-white"
+    >
+      Get Directions ↗
+    </a>
+
+    <a
+      href="tel:+918449311567"
+      class="btn btn-brown"
+    >
+      +91 84493 11567
+    </a>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+
+  <div class="footer-top">
+
+    <div class="footer-logo">
+      Home Style <span>Furniture Mart</span>
+    </div>
+
+    <div class="footer-links">
+
+      <a href="#collections">
+        Collections
+      </a>
+
+      <a href="#story">
+        About
+      </a>
+
+      <a href="#gallery">
+        Gallery
+      </a>
+
+      <a href="#visit">
+        Visit
+      </a>
+
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+
+    <div>
+      © 2026 Home Style Furniture Mart — Concept Website
+    </div>
+
+    <div>
+      CONCEPT DEMO · NOT AN OFFICIAL WEBSITE
+    </div>
+
+  </div>
+
 </footer>
-
-
-<!-- FLOATING WHATSAPP -->
-
-<a
-  class="whatsapp"
-  href="https://wa.me/918449311567"
-  target="_blank"
-  aria-label="WhatsApp"
->
-  ◉
-</a>
-
 
 <script>
 
-function sendWhatsApp(event){
+/* =========================
+   SCROLL REVEAL
+========================= */
 
-  event.preventDefault();
+const revealElements =
+document.querySelectorAll(".reveal");
 
-  const name =
-    document.getElementById("name").value.trim();
+const observer =
+new IntersectionObserver(
 
-  const phone =
-    document.getElementById("phone").value.trim();
+  (entries) => {
 
-  const message =
-    document.getElementById("message").value.trim();
+    entries.forEach((entry) => {
 
-  const text =
-    `Hi Home Style Furniture Mart!
+      if(entry.isIntersecting){
 
-Name: ${name}
-Phone: ${phone}
+        entry.target.classList.add("show");
 
-Enquiry:
-${message}`;
+        observer.unobserve(entry.target);
 
-  const url =
-    "https://wa.me/918449311567?text="
-    + encodeURIComponent(text);
+      }
 
-  window.open(url,"_blank");
+    });
 
-}
+  },
+
+  {
+    threshold:0.12
+  }
+
+);
+
+revealElements.forEach(
+  element => observer.observe(element)
+);
+
+
+/* =========================
+   SMOOTH NAVIGATION
+========================= */
+
+document
+.querySelectorAll('a[href^="#"]')
+.forEach((link) => {
+
+  link.addEventListener("click", function(e){
+
+    const target =
+    document.querySelector(
+      this.getAttribute("href")
+    );
+
+    if(target){
+
+      e.preventDefault();
+
+      target.scrollIntoView({
+        behavior:"smooth"
+      });
+
+    }
+
+  });
+
+});
 
 </script>
 
