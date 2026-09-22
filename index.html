@@ -50,8 +50,6 @@ a{
   text-decoration:none;
 }
 
-/* DEMO NOTICE */
-
 .demo-bar{
   background:#171714;
   color:#fff;
@@ -61,8 +59,6 @@ a{
   letter-spacing:2.5px;
   font-weight:700;
 }
-
-/* NAV */
 
 nav{
   height:78px;
@@ -775,12 +771,10 @@ footer{
 
 <body>
 
-<!-- DEMO DISCLAIMER -->
 <div class="demo-bar">
   CONCEPT DEMO — NOT AN OFFICIAL WEBSITE
 </div>
 
-<!-- NAVIGATION -->
 <nav>
 
   <a href="#" class="logo">
@@ -800,7 +794,6 @@ footer{
 
 </nav>
 
-<!-- HERO -->
 <header class="hero">
 
   <div class="hero-content reveal">
@@ -840,10 +833,10 @@ footer{
 
   <div class="hero-image">
 
-    <!-- YOUR ACTUAL SHOWROOM PHOTO -->
+    <!-- FIXED: ONLINE IMAGE, NO LOCAL FILE REQUIRED -->
     <img
-      src="images/1000013918.jpg"
-      alt="Home Style Furniture Mart showroom"
+      src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1400&q=90"
+      alt="Modern furniture showroom interior"
     >
 
     <div class="hero-badge">
@@ -855,7 +848,6 @@ footer{
 
 </header>
 
-<!-- MARQUEE -->
 <div class="marquee">
 
   <div class="marquee-track">
@@ -878,7 +870,6 @@ footer{
 
 </div>
 
-<!-- COLLECTIONS -->
 <section id="collections">
 
   <div class="section-head reveal">
@@ -901,8 +892,6 @@ footer{
 
   <div class="collection-grid">
 
-    <!-- SOFAS -->
-
     <a href="#visit" class="collection-card reveal">
 
       <img
@@ -924,8 +913,6 @@ footer{
 
     </a>
 
-    <!-- DINING -->
-
     <a href="#visit" class="collection-card reveal">
 
       <img
@@ -946,8 +933,6 @@ footer{
       </div>
 
     </a>
-
-    <!-- BEDROOM -->
 
     <a href="#visit" class="collection-card reveal">
 
@@ -974,7 +959,6 @@ footer{
 
 </section>
 
-<!-- STORY -->
 <section class="about" id="story">
 
   <div class="about-image reveal">
@@ -1032,7 +1016,6 @@ footer{
 
 </section>
 
-<!-- GALLERY -->
 <section class="lookbook" id="gallery">
 
   <div class="section-head reveal">
@@ -1108,7 +1091,6 @@ footer{
 
 </section>
 
-<!-- FEATURES -->
 <div class="features">
 
   <div class="feature reveal">
@@ -1177,7 +1159,6 @@ footer{
 
 </div>
 
-<!-- SHOWROOM CTA -->
 <section class="showroom" id="visit">
 
   <div class="kicker">
@@ -1218,7 +1199,6 @@ footer{
 
 </section>
 
-<!-- FOOTER -->
 <footer>
 
   <div class="footer-top">
@@ -1229,21 +1209,10 @@ footer{
 
     <div class="footer-links">
 
-      <a href="#collections">
-        Collections
-      </a>
-
-      <a href="#story">
-        About
-      </a>
-
-      <a href="#gallery">
-        Gallery
-      </a>
-
-      <a href="#visit">
-        Visit
-      </a>
+      <a href="#collections">Collections</a>
+      <a href="#story">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#visit">Visit</a>
 
     </div>
 
@@ -1264,10 +1233,6 @@ footer{
 </footer>
 
 <script>
-
-/* =========================
-   SCROLL REVEAL
-========================= */
 
 const revealElements =
 document.querySelectorAll(".reveal");
@@ -1301,11 +1266,6 @@ revealElements.forEach(
   element => observer.observe(element)
 );
 
-
-/* =========================
-   SMOOTH NAVIGATION
-========================= */
-
 document
 .querySelectorAll('a[href^="#"]')
 .forEach((link) => {
@@ -1334,4 +1294,4 @@ document
 </script>
 
 </body>
-</html>
+  </html>
